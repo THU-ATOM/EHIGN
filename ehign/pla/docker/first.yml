@@ -1,0 +1,14 @@
+name: ehignfirst
+channels:
+  - conda-forge
+  - defaults
+dependencies:
+  - python=3.11
+  # 使用 conda-forge 的开源 PyMOL 包名
+  - conda-forge::pymol-open-source
+  # Open Babel 也使用 conda-forge 提供的包
+  - conda-forge::openbabel
+  # RDKit 建议使用 conda-forge 源
+  - conda-forge::rdkit
+  - tqdm
+prefix: /root/miniconda3/envs/pymol_env
